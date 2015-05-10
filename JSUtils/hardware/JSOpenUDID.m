@@ -58,7 +58,6 @@
 //#define OpenUDIDLog(fmt, ...) NSLog((@"[Line %d] " fmt), __LINE__, ##__VA_ARGS__);
 
 static NSString * kOpenUDIDSessionCache = nil;
-static NSString * const kOpenUDIDDescription = @"OpenUDID_with_iOS6_Support";
 static NSString * const kOpenUDIDKey = @"OpenUDID";
 static NSString * const kOpenUDIDSlotKey = @"OpenUDID_slot";
 static NSString * const kOpenUDIDAppUIDKey = @"OpenUDID_appUID";
@@ -178,7 +177,7 @@ static int const kOpenUDIDRedundancySlots = 100;
         CFStringRef cfstring = CFUUIDCreateString(kCFAllocatorDefault, uuid);
         const char *cStr = CFStringGetCStringPtr(cfstring,CFStringGetFastestEncoding(cfstring));
         unsigned char result[16];
-        CC_MD5( cStr, strlen(cStr), result );
+        CC_MD5( cStr, (CC_LONG)strlen(cStr), result );
         CFRelease(uuid);
         CFRelease(cfstring);
 

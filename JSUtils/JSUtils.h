@@ -10,6 +10,7 @@
 
 #import "JSExt.h"
 #import "JSLogUtils.h"
+#import "JSUIUtils.h"
 #import "JSMacros.h"
 #import "Executors.h"
 

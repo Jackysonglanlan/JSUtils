@@ -87,24 +87,24 @@
     
     // remove the overlapped ranges
     for (int i=readyToMergeStart; i<=readyToMergeEnd; i++) {
-        [dic removeObjectForKey:iObject(i)];
+        [dic removeObjectForKey:@(i)];
     }
     
     // add new
-    [dic setObject:rangeObject(NSMakeRange(newLoc, newLen)) forKey:iObject(newLoc)];
+    [dic setObject:rangeObject(NSMakeRange(newLoc, newLen)) forKey:@(newLoc)];
     
 //    [dic log];
 }
 
 -(NSRange)getByLocation:(NSUInteger)location{
     if ([self containsLocation:location]) {
-        return [(NSValue*)[dic objectForKey:iObject(location)] rangeValue];
+        return [(NSValue*)[dic objectForKey:@(location)] rangeValue];
     }
     return NSMakeRange(0, 0);
 }
 
 -(void)remove:(NSUInteger)location{
-    [dic removeObjectForKey:iObject(location)];
+    [dic removeObjectForKey:@(location)];
 }
 
 -(void)removeAll{
@@ -112,12 +112,12 @@
 }
 
 -(BOOL)containsLocation:(NSUInteger)location{
-    return [dic objectForKey:iObject(location)] != nil;
+    return [dic objectForKey:@(location)] != nil;
 }
 
 -(BOOL)containsLocation:(NSUInteger)location length:(NSUInteger)length{
     for (int i=location; i>=0; i--) {
-        NSValue *value = [dic objectForKey:iObject(i)];
+        NSValue *value = [dic objectForKey:@(i)];
         // find the one just before the newRange
         if (value) {
             NSRange range = rangeValue(value);

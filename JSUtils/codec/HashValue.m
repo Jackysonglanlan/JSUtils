@@ -39,7 +39,7 @@
 	self = [super init];
 	if (self != nil)
 	{
-		CC_MD5(bytes, length, value);
+		CC_MD5(bytes, (CC_LONG)length, value);
 		type = HASH_VALUE_MD5_TYPE;
 	}
 	return self;
@@ -58,7 +58,7 @@
 	self = [super init];
 	if (self != nil)
 	{
-		CC_SHA256(bytes, length, value);
+		CC_SHA256(bytes, (CC_LONG)length, value);
 		type = HASH_VALUE_SHA_TYPE;
 	}
 	return self;

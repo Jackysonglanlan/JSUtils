@@ -75,11 +75,8 @@
 		4CF517551AFC737B00479A71 /* JSGCDDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5174F1AFC737B00479A71 /* JSGCDDispatcher.m */; };
 		4CF517561AFC737B00479A71 /* JSGCDLoopRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF517511AFC737B00479A71 /* JSGCDLoopRunner.m */; };
 		4CF5175E1AFC739500479A71 /* JSMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5175B1AFC739500479A71 /* JSMath.m */; };
-		4CF517621AFC73E200479A71 /* JSLogUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF517611AFC73E200479A71 /* JSLogUtils.m */; };
 		4CF517711AFC743100479A71 /* JSFileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF517661AFC743100479A71 /* JSFileUtils.m */; };
-		4CF517721AFC743100479A71 /* JSKVObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF517681AFC743100479A71 /* JSKVObserver.m */; };
 		4CF517731AFC743100479A71 /* JSLocationUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5176A1AFC743100479A71 /* JSLocationUtils.m */; };
-		4CF517741AFC743100479A71 /* JSMessageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5176C1AFC743100479A71 /* JSMessageUtils.m */; };
 		4CF517751AFC743100479A71 /* JSNSObjectUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5176E1AFC743100479A71 /* JSNSObjectUtils.m */; };
 		4CF517761AFC743100479A71 /* JSTimeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF517701AFC743100479A71 /* JSTimeUtils.m */; };
 		4CF517911AFC743E00479A71 /* NSArray+SLLEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5177A1AFC743E00479A71 /* NSArray+SLLEnhance.m */; };
@@ -160,6 +157,34 @@
 		4CF518711AFCA34F00479A71 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF516BD1AFB86E200479A71 /* libicucore.dylib */; };
 		4CF518731AFCA3A300479A71 /* RegexKitLiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518721AFCA3A300479A71 /* RegexKitLiteTests.m */; };
 		4CF518761AFCA60F00479A71 /* JSMBOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518751AFCA60F00479A71 /* JSMBOperator.m */; };
+		4CF5187C1AFD230D00479A71 /* JSLogUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5187B1AFD230D00479A71 /* JSLogUtils.m */; };
+		4CF518851AFD233700479A71 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518801AFD233700479A71 /* UIImage+Alpha.m */; };
+		4CF518871AFD233700479A71 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518841AFD233700479A71 /* UIImage+RoundedCorner.m */; };
+		4CF5188D1AFD249800479A71 /* JSDrawableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5188C1AFD249800479A71 /* JSDrawableView.m */; };
+		4CF518901AFD252C00479A71 /* JSExtendButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5188F1AFD252C00479A71 /* JSExtendButton.m */; };
+		4CF518941AFD27B400479A71 /* TestDrawableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518931AFD27B400479A71 /* TestDrawableView.m */; };
+		4CF518991AFDB63C00479A71 /* JSSpriteLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518971AFDB63C00479A71 /* JSSpriteLayer.m */; };
+		4CF5189A1AFDB63C00479A71 /* UIImage+SLLEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518981AFDB63C00479A71 /* UIImage+SLLEnhance.m */; };
+		4CF518A01AFDB89500479A71 /* AOPContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5189D1AFDB89500479A71 /* AOPContext.m */; };
+		4CF518A11AFDB89500479A71 /* ObjCTypeChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5189F1AFDB89500479A71 /* ObjCTypeChecker.m */; };
+		4CF518AD1AFE2F0300479A71 /* JSUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518AC1AFE2F0300479A71 /* JSUIUtils.m */; };
+		4CF518B01AFF13F100479A71 /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF518AF1AFF13F100479A71 /* mask.png */; };
+		4CF518B41AFF779C00479A71 /* YTKKeyValueStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518B31AFF779C00479A71 /* YTKKeyValueStore.m */; };
+		4CF518C01AFF77D600479A71 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518B71AFF77D600479A71 /* FMDatabase.m */; };
+		4CF518C11AFF77D600479A71 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518B91AFF77D600479A71 /* FMDatabaseAdditions.m */; };
+		4CF518C21AFF77D600479A71 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518BB1AFF77D600479A71 /* FMDatabasePool.m */; };
+		4CF518C31AFF77D600479A71 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518BD1AFF77D600479A71 /* FMDatabaseQueue.m */; };
+		4CF518C41AFF77D600479A71 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518BF1AFF77D600479A71 /* FMResultSet.m */; };
+		4CF518C61AFF77EE00479A71 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF518C51AFF77EE00479A71 /* libsqlite3.dylib */; };
+		4CF518C91AFF786800479A71 /* FMDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518C81AFF786800479A71 /* FMDBHelper.m */; };
+		4CF518CC1AFF78D900479A71 /* KVStoreSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518CB1AFF78D900479A71 /* KVStoreSource.m */; };
+		4CF518CF1AFF792300479A71 /* EncryptUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518CE1AFF792300479A71 /* EncryptUtils.m */; };
+		4CF518DA1AFF799C00479A71 /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518D31AFF799C00479A71 /* RNCryptor.m */; };
+		4CF518DB1AFF799C00479A71 /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518D51AFF799C00479A71 /* RNCryptorEngine.m */; };
+		4CF518DC1AFF799C00479A71 /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518D71AFF799C00479A71 /* RNDecryptor.m */; };
+		4CF518DD1AFF799C00479A71 /* RNEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518D91AFF799C00479A71 /* RNEncryptor.m */; };
+		4CF518E01AFF7B4E00479A71 /* TestJSSpriteLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518DF1AFF7B4E00479A71 /* TestJSSpriteLayerVC.m */; };
+		4CF518E21AFF7C4800479A71 /* Richter2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF518E11AFF7C4800479A71 /* Richter2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -406,17 +431,11 @@
 		4CF5175B1AFC739500479A71 /* JSMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMath.m; sourceTree = "<group>"; };
 		4CF5175C1AFC739500479A71 /* JSShortHand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSShortHand.h; sourceTree = "<group>"; };
 		4CF5175D1AFC739500479A71 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
-		4CF517601AFC73E200479A71 /* JSLogUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLogUtils.h; sourceTree = "<group>"; };
-		4CF517611AFC73E200479A71 /* JSLogUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLogUtils.m; sourceTree = "<group>"; };
 		4CF517631AFC740100479A71 /* JSUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSUtils.h; sourceTree = "<group>"; };
 		4CF517651AFC743100479A71 /* JSFileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSFileUtils.h; sourceTree = "<group>"; };
 		4CF517661AFC743100479A71 /* JSFileUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSFileUtils.m; sourceTree = "<group>"; };
-		4CF517671AFC743100479A71 /* JSKVObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSKVObserver.h; sourceTree = "<group>"; };
-		4CF517681AFC743100479A71 /* JSKVObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSKVObserver.m; sourceTree = "<group>"; };
 		4CF517691AFC743100479A71 /* JSLocationUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLocationUtils.h; sourceTree = "<group>"; };
 		4CF5176A1AFC743100479A71 /* JSLocationUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLocationUtils.m; sourceTree = "<group>"; };
-		4CF5176B1AFC743100479A71 /* JSMessageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMessageUtils.h; sourceTree = "<group>"; };
-		4CF5176C1AFC743100479A71 /* JSMessageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMessageUtils.m; sourceTree = "<group>"; };
 		4CF5176D1AFC743100479A71 /* JSNSObjectUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNSObjectUtils.h; sourceTree = "<group>"; };
 		4CF5176E1AFC743100479A71 /* JSNSObjectUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNSObjectUtils.m; sourceTree = "<group>"; };
 		4CF5176F1AFC743100479A71 /* JSTimeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTimeUtils.h; sourceTree = "<group>"; };
@@ -543,6 +562,60 @@
 		4CF518721AFCA3A300479A71 /* RegexKitLiteTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLiteTests.m; sourceTree = "<group>"; };
 		4CF518741AFCA60F00479A71 /* JSMBOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMBOperator.h; sourceTree = "<group>"; };
 		4CF518751AFCA60F00479A71 /* JSMBOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMBOperator.m; sourceTree = "<group>"; };
+		4CF5187A1AFD230D00479A71 /* JSLogUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLogUtils.h; sourceTree = "<group>"; };
+		4CF5187B1AFD230D00479A71 /* JSLogUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLogUtils.m; sourceTree = "<group>"; };
+		4CF5187F1AFD233700479A71 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		4CF518801AFD233700479A71 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		4CF518831AFD233700479A71 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		4CF518841AFD233700479A71 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		4CF5188B1AFD249800479A71 /* JSDrawableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDrawableView.h; sourceTree = "<group>"; };
+		4CF5188C1AFD249800479A71 /* JSDrawableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDrawableView.m; sourceTree = "<group>"; };
+		4CF5188E1AFD252C00479A71 /* JSExtendButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSExtendButton.h; sourceTree = "<group>"; };
+		4CF5188F1AFD252C00479A71 /* JSExtendButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSExtendButton.m; sourceTree = "<group>"; };
+		4CF518921AFD27B400479A71 /* TestDrawableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDrawableView.h; sourceTree = "<group>"; };
+		4CF518931AFD27B400479A71 /* TestDrawableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDrawableView.m; sourceTree = "<group>"; };
+		4CF518951AFDB63C00479A71 /* JSSpriteLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSpriteLayer.h; sourceTree = "<group>"; };
+		4CF518961AFDB63C00479A71 /* UIImage+SLLEnhance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SLLEnhance.h"; sourceTree = "<group>"; };
+		4CF518971AFDB63C00479A71 /* JSSpriteLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSpriteLayer.m; sourceTree = "<group>"; };
+		4CF518981AFDB63C00479A71 /* UIImage+SLLEnhance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SLLEnhance.m"; sourceTree = "<group>"; };
+		4CF5189C1AFDB89500479A71 /* AOPContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOPContext.h; sourceTree = "<group>"; };
+		4CF5189D1AFDB89500479A71 /* AOPContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOPContext.m; sourceTree = "<group>"; };
+		4CF5189E1AFDB89500479A71 /* ObjCTypeChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCTypeChecker.h; sourceTree = "<group>"; };
+		4CF5189F1AFDB89500479A71 /* ObjCTypeChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCTypeChecker.m; sourceTree = "<group>"; };
+		4CF518AB1AFE2F0300479A71 /* JSUIUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSUIUtils.h; sourceTree = "<group>"; };
+		4CF518AC1AFE2F0300479A71 /* JSUIUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSUIUtils.m; sourceTree = "<group>"; };
+		4CF518AF1AFF13F100479A71 /* mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask.png; sourceTree = "<group>"; };
+		4CF518B21AFF779C00479A71 /* YTKKeyValueStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKKeyValueStore.h; sourceTree = "<group>"; };
+		4CF518B31AFF779C00479A71 /* YTKKeyValueStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKKeyValueStore.m; sourceTree = "<group>"; };
+		4CF518B61AFF77D600479A71 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		4CF518B71AFF77D600479A71 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		4CF518B81AFF77D600479A71 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		4CF518B91AFF77D600479A71 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		4CF518BA1AFF77D600479A71 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		4CF518BB1AFF77D600479A71 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		4CF518BC1AFF77D600479A71 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		4CF518BD1AFF77D600479A71 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		4CF518BE1AFF77D600479A71 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		4CF518BF1AFF77D600479A71 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		4CF518C51AFF77EE00479A71 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4CF518C71AFF786800479A71 /* FMDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBHelper.h; sourceTree = "<group>"; };
+		4CF518C81AFF786800479A71 /* FMDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBHelper.m; sourceTree = "<group>"; };
+		4CF518CA1AFF78D900479A71 /* KVStoreSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVStoreSource.h; sourceTree = "<group>"; };
+		4CF518CB1AFF78D900479A71 /* KVStoreSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVStoreSource.m; sourceTree = "<group>"; };
+		4CF518CD1AFF792300479A71 /* EncryptUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptUtils.h; sourceTree = "<group>"; };
+		4CF518CE1AFF792300479A71 /* EncryptUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptUtils.m; sourceTree = "<group>"; };
+		4CF518D11AFF799C00479A71 /* RNCryptor+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor+Private.h"; sourceTree = "<group>"; };
+		4CF518D21AFF799C00479A71 /* RNCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
+		4CF518D31AFF799C00479A71 /* RNCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptor.m; sourceTree = "<group>"; };
+		4CF518D41AFF799C00479A71 /* RNCryptorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptorEngine.h; sourceTree = "<group>"; };
+		4CF518D51AFF799C00479A71 /* RNCryptorEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptorEngine.m; sourceTree = "<group>"; };
+		4CF518D61AFF799C00479A71 /* RNDecryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNDecryptor.h; sourceTree = "<group>"; };
+		4CF518D71AFF799C00479A71 /* RNDecryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNDecryptor.m; sourceTree = "<group>"; };
+		4CF518D81AFF799C00479A71 /* RNEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNEncryptor.h; sourceTree = "<group>"; };
+		4CF518D91AFF799C00479A71 /* RNEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNEncryptor.m; sourceTree = "<group>"; };
+		4CF518DE1AFF7B4E00479A71 /* TestJSSpriteLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestJSSpriteLayerVC.h; sourceTree = "<group>"; };
+		4CF518DF1AFF7B4E00479A71 /* TestJSSpriteLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestJSSpriteLayerVC.m; sourceTree = "<group>"; };
+		4CF518E11AFF7C4800479A71 /* Richter2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Richter2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -552,6 +625,7 @@
 			files = (
 				4CF517381AFB875200479A71 /* libPods-ReactiveCocoa_arm.a in Frameworks */,
 				4CF517371AFB875200479A71 /* libPods-ReactiveCocoa_386.a in Frameworks */,
+				4CF518C61AFF77EE00479A71 /* libsqlite3.dylib in Frameworks */,
 				4CF516BE1AFB86E200479A71 /* libicucore.dylib in Frameworks */,
 				4CF516BC1AFB86DA00479A71 /* libz.dylib in Frameworks */,
 				4CF5160B1AFB845800479A71 /* CoreGraphics.framework in Frameworks */,
@@ -584,6 +658,7 @@
 			children = (
 				4CF5163D1AFB85D500479A71 /* PodLibs */,
 				4CF5160E1AFB845800479A71 /* JSUtils */,
+				4CF518911AFD27B400479A71 /* JSUtilsUITests */,
 				4CF5162D1AFB845800479A71 /* JSUtilsTests */,
 				4CF516071AFB845800479A71 /* Frameworks */,
 				4CF516061AFB845800479A71 /* Products */,
@@ -602,6 +677,7 @@
 		4CF516071AFB845800479A71 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CF518C51AFF77EE00479A71 /* libsqlite3.dylib */,
 				4CF516BD1AFB86E200479A71 /* libicucore.dylib */,
 				4CF516BB1AFB86DA00479A71 /* libz.dylib */,
 				4CF516081AFB845800479A71 /* Foundation.framework */,
@@ -626,7 +702,8 @@
 				4CF517A71AFC757100479A71 /* io */,
 				4CF517571AFC739500479A71 /* macros */,
 				4CF517E01AFC76B200479A71 /* objects */,
-				4CF5175F1AFC73E200479A71 /* JSLogUtils */,
+				4CF5189B1AFDB89500479A71 /* runtime */,
+				4CF5187D1AFD233700479A71 /* ui */,
 				4CF516171AFB845800479A71 /* JSAppDelegate.h */,
 				4CF516181AFB845800479A71 /* JSAppDelegate.m */,
 				4CF5161A1AFB845800479A71 /* Main.storyboard */,
@@ -688,6 +765,8 @@
 				4CF516B51AFB869400479A71 /* RegexKitLite */,
 				4CF516BF1AFB875200479A71 /* MAObjCRuntime */,
 				4CF516CC1AFB875200479A71 /* RAC_2.3.1 */,
+				4CF518B51AFF77D600479A71 /* FMDB */,
+				4CF518B11AFF779C00479A71 /* YTKKeyValueStore */,
 			);
 			path = PodLibs;
 			sourceTree = "<group>";
@@ -1016,26 +1095,15 @@
 			path = macros;
 			sourceTree = "<group>";
 		};
-		4CF5175F1AFC73E200479A71 /* JSLogUtils */ = {
-			isa = PBXGroup;
-			children = (
-				4CF517601AFC73E200479A71 /* JSLogUtils.h */,
-				4CF517611AFC73E200479A71 /* JSLogUtils.m */,
-			);
-			path = JSLogUtils;
-			sourceTree = "<group>";
-		};
 		4CF517641AFC743100479A71 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				4CF5187A1AFD230D00479A71 /* JSLogUtils.h */,
+				4CF5187B1AFD230D00479A71 /* JSLogUtils.m */,
 				4CF517651AFC743100479A71 /* JSFileUtils.h */,
 				4CF517661AFC743100479A71 /* JSFileUtils.m */,
-				4CF517671AFC743100479A71 /* JSKVObserver.h */,
-				4CF517681AFC743100479A71 /* JSKVObserver.m */,
 				4CF517691AFC743100479A71 /* JSLocationUtils.h */,
 				4CF5176A1AFC743100479A71 /* JSLocationUtils.m */,
-				4CF5176B1AFC743100479A71 /* JSMessageUtils.h */,
-				4CF5176C1AFC743100479A71 /* JSMessageUtils.m */,
 				4CF5176D1AFC743100479A71 /* JSNSObjectUtils.h */,
 				4CF5176E1AFC743100479A71 /* JSNSObjectUtils.m */,
 				4CF5176F1AFC743100479A71 /* JSTimeUtils.h */,
@@ -1077,6 +1145,9 @@
 		4CF5179D1AFC749B00479A71 /* codec */ = {
 			isa = PBXGroup;
 			children = (
+				4CF518D01AFF799C00479A71 /* RNCryptor */,
+				4CF518CD1AFF792300479A71 /* EncryptUtils.h */,
+				4CF518CE1AFF792300479A71 /* EncryptUtils.m */,
 				4CF5179E1AFC749B00479A71 /* Base64.h */,
 				4CF5179F1AFC749B00479A71 /* Base64.m */,
 				4CF517A01AFC749B00479A71 /* HashValue.h */,
@@ -1180,11 +1251,11 @@
 		4CF517F71AFC76B200479A71 /* JSWorkshop */ = {
 			isa = PBXGroup;
 			children = (
+				4CF517FB1AFC76B200479A71 /* JSWorkshop.h */,
+				4CF517FC1AFC76B200479A71 /* JSWorkshop.m */,
 				4CF517F81AFC76B200479A71 /* JSPipeLine.h */,
 				4CF517F91AFC76B200479A71 /* JSPipeLine.m */,
 				4CF517FA1AFC76B200479A71 /* JSPipeLineUnit.h */,
-				4CF517FB1AFC76B200479A71 /* JSWorkshop.h */,
-				4CF517FC1AFC76B200479A71 /* JSWorkshop.m */,
 			);
 			path = JSWorkshop;
 			sourceTree = "<group>";
@@ -1323,6 +1394,113 @@
 			path = RACTests;
 			sourceTree = "<group>";
 		};
+		4CF5187D1AFD233700479A71 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				4CF5187E1AFD233700479A71 /* UIImage-categories */,
+				4CF518AB1AFE2F0300479A71 /* JSUIUtils.h */,
+				4CF518AC1AFE2F0300479A71 /* JSUIUtils.m */,
+				4CF5188B1AFD249800479A71 /* JSDrawableView.h */,
+				4CF5188C1AFD249800479A71 /* JSDrawableView.m */,
+				4CF5188E1AFD252C00479A71 /* JSExtendButton.h */,
+				4CF5188F1AFD252C00479A71 /* JSExtendButton.m */,
+				4CF518951AFDB63C00479A71 /* JSSpriteLayer.h */,
+				4CF518971AFDB63C00479A71 /* JSSpriteLayer.m */,
+				4CF518961AFDB63C00479A71 /* UIImage+SLLEnhance.h */,
+				4CF518981AFDB63C00479A71 /* UIImage+SLLEnhance.m */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		4CF5187E1AFD233700479A71 /* UIImage-categories */ = {
+			isa = PBXGroup;
+			children = (
+				4CF5187F1AFD233700479A71 /* UIImage+Alpha.h */,
+				4CF518801AFD233700479A71 /* UIImage+Alpha.m */,
+				4CF518831AFD233700479A71 /* UIImage+RoundedCorner.h */,
+				4CF518841AFD233700479A71 /* UIImage+RoundedCorner.m */,
+			);
+			path = "UIImage-categories";
+			sourceTree = "<group>";
+		};
+		4CF518911AFD27B400479A71 /* JSUtilsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4CF518AE1AFF13F100479A71 /* Fixtures */,
+				4CF518921AFD27B400479A71 /* TestDrawableView.h */,
+				4CF518931AFD27B400479A71 /* TestDrawableView.m */,
+				4CF518DE1AFF7B4E00479A71 /* TestJSSpriteLayerVC.h */,
+				4CF518DF1AFF7B4E00479A71 /* TestJSSpriteLayerVC.m */,
+			);
+			path = JSUtilsUITests;
+			sourceTree = "<group>";
+		};
+		4CF5189B1AFDB89500479A71 /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				4CF5189C1AFDB89500479A71 /* AOPContext.h */,
+				4CF5189D1AFDB89500479A71 /* AOPContext.m */,
+				4CF5189E1AFDB89500479A71 /* ObjCTypeChecker.h */,
+				4CF5189F1AFDB89500479A71 /* ObjCTypeChecker.m */,
+			);
+			path = runtime;
+			sourceTree = "<group>";
+		};
+		4CF518AE1AFF13F100479A71 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				4CF518E11AFF7C4800479A71 /* Richter2.png */,
+				4CF518AF1AFF13F100479A71 /* mask.png */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		4CF518B11AFF779C00479A71 /* YTKKeyValueStore */ = {
+			isa = PBXGroup;
+			children = (
+				4CF518CA1AFF78D900479A71 /* KVStoreSource.h */,
+				4CF518CB1AFF78D900479A71 /* KVStoreSource.m */,
+				4CF518B21AFF779C00479A71 /* YTKKeyValueStore.h */,
+				4CF518B31AFF779C00479A71 /* YTKKeyValueStore.m */,
+			);
+			path = YTKKeyValueStore;
+			sourceTree = "<group>";
+		};
+		4CF518B51AFF77D600479A71 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				4CF518C71AFF786800479A71 /* FMDBHelper.h */,
+				4CF518C81AFF786800479A71 /* FMDBHelper.m */,
+				4CF518B61AFF77D600479A71 /* FMDatabase.h */,
+				4CF518B71AFF77D600479A71 /* FMDatabase.m */,
+				4CF518B81AFF77D600479A71 /* FMDatabaseAdditions.h */,
+				4CF518B91AFF77D600479A71 /* FMDatabaseAdditions.m */,
+				4CF518BA1AFF77D600479A71 /* FMDatabasePool.h */,
+				4CF518BB1AFF77D600479A71 /* FMDatabasePool.m */,
+				4CF518BC1AFF77D600479A71 /* FMDatabaseQueue.h */,
+				4CF518BD1AFF77D600479A71 /* FMDatabaseQueue.m */,
+				4CF518BE1AFF77D600479A71 /* FMResultSet.h */,
+				4CF518BF1AFF77D600479A71 /* FMResultSet.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		4CF518D01AFF799C00479A71 /* RNCryptor */ = {
+			isa = PBXGroup;
+			children = (
+				4CF518D11AFF799C00479A71 /* RNCryptor+Private.h */,
+				4CF518D21AFF799C00479A71 /* RNCryptor.h */,
+				4CF518D31AFF799C00479A71 /* RNCryptor.m */,
+				4CF518D41AFF799C00479A71 /* RNCryptorEngine.h */,
+				4CF518D51AFF799C00479A71 /* RNCryptorEngine.m */,
+				4CF518D61AFF799C00479A71 /* RNDecryptor.h */,
+				4CF518D71AFF799C00479A71 /* RNDecryptor.m */,
+				4CF518D81AFF799C00479A71 /* RNEncryptor.h */,
+				4CF518D91AFF799C00479A71 /* RNEncryptor.m */,
+			);
+			path = RNCryptor;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1401,8 +1579,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CF516211AFB845800479A71 /* Images.xcassets in Resources */,
+				4CF518B01AFF13F100479A71 /* mask.png in Resources */,
 				4CF516B91AFB869400479A71 /* RegexKitLite.html in Resources */,
 				4CF516131AFB845800479A71 /* InfoPlist.strings in Resources */,
+				4CF518E21AFF7C4800479A71 /* Richter2.png in Resources */,
 				4CF5161C1AFB845800479A71 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1428,21 +1608,29 @@
 			files = (
 				4CF516951AFB863300479A71 /* OALAction.m in Sources */,
 				4CF5169B1AFB863300479A71 /* OALAudioTracks.m in Sources */,
+				4CF5187C1AFD230D00479A71 /* JSLogUtils.m in Sources */,
 				4CF518071AFC76B200479A71 /* JSPipeLine.m in Sources */,
 				4CF516151AFB845800479A71 /* main.m in Sources */,
 				4CF517541AFC737B00479A71 /* Executors.m in Sources */,
+				4CF518C41AFF77D600479A71 /* FMResultSet.m in Sources */,
 				4CF516AD1AFB863300479A71 /* OALAudioFile.m in Sources */,
 				4CF517DD1AFC766600479A71 /* JSHardware.m in Sources */,
+				4CF518871AFD233700479A71 /* UIImage+RoundedCorner.m in Sources */,
 				4CF5181E1AFC9B0500479A71 /* GCReusableQueue.m in Sources */,
 				4CF517D31AFC762D00479A71 /* RangeCollection.m in Sources */,
 				4CF516A21AFB863300479A71 /* ALListener.m in Sources */,
 				4CF517441AFC735600479A71 /* ListPlayManager.m in Sources */,
 				4CF5164F1AFB862300479A71 /* NSNumber+ObjectiveSugar.m in Sources */,
 				4CF517B51AFC757100479A71 /* StreamReader.m in Sources */,
+				4CF518CC1AFF78D900479A71 /* KVStoreSource.m in Sources */,
+				4CF518941AFD27B400479A71 /* TestDrawableView.m in Sources */,
 				4CF517461AFC735600479A71 /* JSVoiceMeter.m in Sources */,
 				4CF5161F1AFB845800479A71 /* JSViewController.m in Sources */,
+				4CF518DA1AFF799C00479A71 /* RNCryptor.m in Sources */,
 				4CF5169C1AFB863300479A71 /* OALSimpleAudio.m in Sources */,
+				4CF518DC1AFF799C00479A71 /* RNDecryptor.m in Sources */,
 				4CF517951AFC743E00479A71 /* NSException+SLLEnhance.m in Sources */,
+				4CF518A11AFDB89500479A71 /* ObjCTypeChecker.m in Sources */,
 				4CF517521AFC737B00479A71 /* AsyncTask.m in Sources */,
 				4CF517B41AFC757100479A71 /* JSIncrementalFileReader.m in Sources */,
 				4CF5181D1AFC9B0500479A71 /* BoundedBlockingQueue.m in Sources */,
@@ -1452,7 +1640,6 @@
 				4CF518031AFC76B200479A71 /* JSMessageBusSubscriber.m in Sources */,
 				4CF517A41AFC749B00479A71 /* Base64.m in Sources */,
 				4CF517341AFB875200479A71 /* RTProperty.m in Sources */,
-				4CF517621AFC73E200479A71 /* JSLogUtils.m in Sources */,
 				4CF516191AFB845800479A71 /* JSAppDelegate.m in Sources */,
 				4CF517961AFC743F00479A71 /* NSNumber+StringFormatAdditions.m in Sources */,
 				4CF516A81AFB863300479A71 /* OALSuspendHandler.m in Sources */,
@@ -1464,6 +1651,7 @@
 				4CF517561AFC737B00479A71 /* JSGCDLoopRunner.m in Sources */,
 				4CF5169E1AFB863300479A71 /* ALCaptureDevice.m in Sources */,
 				4CF516AC1AFB863300479A71 /* NSMutableDictionary+WeakReferences.m in Sources */,
+				4CF518851AFD233700479A71 /* UIImage+Alpha.m in Sources */,
 				4CF517941AFC743E00479A71 /* NSDictionary+SLLEnhance.m in Sources */,
 				4CF518211AFC9B0500479A71 /* SBPriorityQueue.m in Sources */,
 				4CF518761AFCA60F00479A71 /* JSMBOperator.m in Sources */,
@@ -1474,11 +1662,13 @@
 				4CF517D01AFC762D00479A71 /* OrderedDictionary.m in Sources */,
 				4CF517931AFC743E00479A71 /* NSDate-Utilities.m in Sources */,
 				4CF517CE1AFC762D00479A71 /* CKLinkedList.m in Sources */,
-				4CF517741AFC743100479A71 /* JSMessageUtils.m in Sources */,
 				4CF518021AFC76B200479A71 /* JSMessageBus.m in Sources */,
+				4CF518CF1AFF792300479A71 /* EncryptUtils.m in Sources */,
+				4CF518C11AFF77D600479A71 /* FMDatabaseAdditions.m in Sources */,
 				4CF517531AFC737B00479A71 /* CountDownLatch.m in Sources */,
 				4CF517451AFC735600479A71 /* JSAudioUtils.m in Sources */,
 				4CF517A61AFC749B00479A71 /* LFCGzipUtility.m in Sources */,
+				4CF518C31AFF77D600479A71 /* FMDatabaseQueue.m in Sources */,
 				4CF518221AFC9B0500479A71 /* UnboundedBlockingQueue.m in Sources */,
 				4CF516971AFB863300479A71 /* OALAudioActions.m in Sources */,
 				4CF516BA1AFB869400479A71 /* RegexKitLite.m in Sources */,
@@ -1486,12 +1676,18 @@
 				4CF517761AFC743100479A71 /* JSTimeUtils.m in Sources */,
 				4CF516511AFB862300479A71 /* NSString+ObjectiveSugar.m in Sources */,
 				4CF517FF1AFC76B200479A71 /* JSBatchOperator.m in Sources */,
+				4CF518DD1AFF799C00479A71 /* RNEncryptor.m in Sources */,
+				4CF5189A1AFDB63C00479A71 /* UIImage+SLLEnhance.m in Sources */,
 				4CF518041AFC76B200479A71 /* JSMigrationManager.m in Sources */,
+				4CF518DB1AFF799C00479A71 /* RNCryptorEngine.m in Sources */,
 				4CF516AE1AFB863300479A71 /* OALTools.m in Sources */,
 				4CF517B61AFC757100479A71 /* StreamWriter.m in Sources */,
+				4CF518901AFD252C00479A71 /* JSExtendButton.m in Sources */,
 				4CF517FE1AFC76B200479A71 /* DistanceOfTimeFormatter.m in Sources */,
 				4CF5181F1AFC9B0500479A71 /* PDQueue.m in Sources */,
 				4CF517321AFB875200479A71 /* RTIvar.m in Sources */,
+				4CF518C91AFF786800479A71 /* FMDBHelper.m in Sources */,
+				4CF518C21AFF77D600479A71 /* FMDatabasePool.m in Sources */,
 				4CF518081AFC76B200479A71 /* JSWorkshop.m in Sources */,
 				4CF516A61AFB863300479A71 /* OpenALManager.m in Sources */,
 				4CF5169D1AFB863300479A71 /* ALBuffer.m in Sources */,
@@ -1506,28 +1702,34 @@
 				4CF516501AFB862300479A71 /* NSSet+ObjectiveSugar.m in Sources */,
 				4CF517981AFC743F00479A71 /* NSObject+Messaging.m in Sources */,
 				4CF516A51AFB863300479A71 /* ALWrapper.m in Sources */,
+				4CF518991AFDB63C00479A71 /* JSSpriteLayer.m in Sources */,
 				4CF516A71AFB863300479A71 /* OALAudioSession.m in Sources */,
 				4CF518001AFC76B200479A71 /* JSCompositePattern.m in Sources */,
 				4CF516AB1AFB863300479A71 /* NSMutableArray+WeakReferences.m in Sources */,
 				4CF5164C1AFB862300479A71 /* NSArray+ObjectiveSugar.m in Sources */,
 				4CF516991AFB863300479A71 /* OALAudioTrack.m in Sources */,
 				4CF517361AFB875200479A71 /* RTUnregisteredClass.m in Sources */,
-				4CF517721AFC743100479A71 /* JSKVObserver.m in Sources */,
 				4CF516A11AFB863300479A71 /* ALDevice.m in Sources */,
 				4CF516A41AFB863300479A71 /* ALSource.m in Sources */,
 				4CF517911AFC743E00479A71 /* NSArray+SLLEnhance.m in Sources */,
 				4CF517971AFC743F00479A71 /* NSObject+GCDSLL.m in Sources */,
 				4CF517711AFC743100479A71 /* JSFileUtils.m in Sources */,
+				4CF5188D1AFD249800479A71 /* JSDrawableView.m in Sources */,
 				4CF517921AFC743E00479A71 /* NSData+SLLEnhance.m in Sources */,
 				4CF516A91AFB863300479A71 /* IOSVersion.m in Sources */,
 				4CF517DE1AFC766600479A71 /* JSOpenUDID.m in Sources */,
 				4CF517B31AFC757100479A71 /* JSFileIO.m in Sources */,
 				4CF517551AFC737B00479A71 /* JSGCDDispatcher.m in Sources */,
 				4CF5169A1AFB863300479A71 /* OALAudioTrackNotifications.m in Sources */,
+				4CF518B41AFF779C00479A71 /* YTKKeyValueStore.m in Sources */,
+				4CF518C01AFF77D600479A71 /* FMDatabase.m in Sources */,
 				4CF517DF1AFC766600479A71 /* JSSystem.m in Sources */,
 				4CF517B21AFC757100479A71 /* JSBits.m in Sources */,
 				4CF518011AFC76B200479A71 /* JSDataTimoutReporter.m in Sources */,
+				4CF518E01AFF7B4E00479A71 /* TestJSSpriteLayerVC.m in Sources */,
 				4CF5179C1AFC743F00479A71 /* NSUserDefaults+SLLEnhance.m in Sources */,
+				4CF518A01AFDB89500479A71 /* AOPContext.m in Sources */,
+				4CF518AD1AFE2F0300479A71 /* JSUIUtils.m in Sources */,
 				4CF517A51AFC749B00479A71 /* HashValue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1781,6 +1983,7 @@
 				4CF516391AFB845800479A71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CF5163A1AFB845800479A71 /* Build configuration list for PBXNativeTarget "JSUtilsTests" */ = {
 			isa = XCConfigurationList;
@@ -1789,6 +1992,7 @@
 				4CF5163C1AFB845800479A71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
