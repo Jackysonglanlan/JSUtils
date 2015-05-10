@@ -185,6 +185,8 @@
 		4CF518DD1AFF799C00479A71 /* RNEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518D91AFF799C00479A71 /* RNEncryptor.m */; };
 		4CF518E01AFF7B4E00479A71 /* TestJSSpriteLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518DF1AFF7B4E00479A71 /* TestJSSpriteLayerVC.m */; };
 		4CF518E21AFF7C4800479A71 /* Richter2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF518E11AFF7C4800479A71 /* Richter2.png */; };
+		4CF518E81AFF8CE000479A71 /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518E51AFF8CE000479A71 /* FBKVOController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		4CF518E91AFF8CE000479A71 /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF518E71AFF8CE000479A71 /* NSObject+FBKVOController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -616,6 +618,10 @@
 		4CF518DE1AFF7B4E00479A71 /* TestJSSpriteLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestJSSpriteLayerVC.h; sourceTree = "<group>"; };
 		4CF518DF1AFF7B4E00479A71 /* TestJSSpriteLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestJSSpriteLayerVC.m; sourceTree = "<group>"; };
 		4CF518E11AFF7C4800479A71 /* Richter2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Richter2.png; sourceTree = "<group>"; };
+		4CF518E41AFF8CE000479A71 /* FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBKVOController.h; sourceTree = "<group>"; };
+		4CF518E51AFF8CE000479A71 /* FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBKVOController.m; sourceTree = "<group>"; };
+		4CF518E61AFF8CE000479A71 /* NSObject+FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FBKVOController.h"; sourceTree = "<group>"; };
+		4CF518E71AFF8CE000479A71 /* NSObject+FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FBKVOController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -767,6 +773,7 @@
 				4CF516CC1AFB875200479A71 /* RAC_2.3.1 */,
 				4CF518B51AFF77D600479A71 /* FMDB */,
 				4CF518B11AFF779C00479A71 /* YTKKeyValueStore */,
+				4CF518E31AFF8CE000479A71 /* FBKVOController */,
 			);
 			path = PodLibs;
 			sourceTree = "<group>";
@@ -1501,6 +1508,17 @@
 			path = RNCryptor;
 			sourceTree = "<group>";
 		};
+		4CF518E31AFF8CE000479A71 /* FBKVOController */ = {
+			isa = PBXGroup;
+			children = (
+				4CF518E41AFF8CE000479A71 /* FBKVOController.h */,
+				4CF518E51AFF8CE000479A71 /* FBKVOController.m */,
+				4CF518E61AFF8CE000479A71 /* NSObject+FBKVOController.h */,
+				4CF518E71AFF8CE000479A71 /* NSObject+FBKVOController.m */,
+			);
+			path = FBKVOController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1664,12 +1682,14 @@
 				4CF517CE1AFC762D00479A71 /* CKLinkedList.m in Sources */,
 				4CF518021AFC76B200479A71 /* JSMessageBus.m in Sources */,
 				4CF518CF1AFF792300479A71 /* EncryptUtils.m in Sources */,
+				4CF518E81AFF8CE000479A71 /* FBKVOController.m in Sources */,
 				4CF518C11AFF77D600479A71 /* FMDatabaseAdditions.m in Sources */,
 				4CF517531AFC737B00479A71 /* CountDownLatch.m in Sources */,
 				4CF517451AFC735600479A71 /* JSAudioUtils.m in Sources */,
 				4CF517A61AFC749B00479A71 /* LFCGzipUtility.m in Sources */,
 				4CF518C31AFF77D600479A71 /* FMDatabaseQueue.m in Sources */,
 				4CF518221AFC9B0500479A71 /* UnboundedBlockingQueue.m in Sources */,
+				4CF518E91AFF8CE000479A71 /* NSObject+FBKVOController.m in Sources */,
 				4CF516971AFB863300479A71 /* OALAudioActions.m in Sources */,
 				4CF516BA1AFB869400479A71 /* RegexKitLite.m in Sources */,
 				4CF516AA1AFB863300479A71 /* mach_timing.c in Sources */,
