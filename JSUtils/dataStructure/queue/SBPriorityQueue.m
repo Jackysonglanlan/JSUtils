@@ -200,6 +200,7 @@ void swim(__strong id heap[], NSUInteger idx, NSComparator comparator) {
     });
     free(_heap);
     dispatch_release(heap_q);
+    [super dealloc];
 }
 
 @end

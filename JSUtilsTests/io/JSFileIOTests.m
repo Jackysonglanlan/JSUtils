@@ -39,7 +39,7 @@
     [fileIO asyncReadFile:[testFile path] chunkSize:10 range:NSMakeRange(1000, 30)
                   process:^(NSData *data, NSUInteger total) {
                       [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] log];
-                      NSLog(@"total:%u",total);
+                      NSLog(@"total:%lu",(unsigned long)total);
                   }
                    finish:^{
                        [@"finish" log];
@@ -55,7 +55,7 @@
     [fileIO asyncAppendFileWithData:[NSData dataWithContentsOfURL:testFile]
                              toPath:path
                             process:^(NSData *dataHasWritten) {
-                                NSLog(@"has written bytes:%u", dataHasWritten.length);
+                                NSLog(@"has written bytes:%lu", (unsigned long)dataHasWritten.length);
                             }
                              finish:^{
                                  [@"finish" log];

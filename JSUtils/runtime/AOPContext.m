@@ -83,19 +83,19 @@
     if ([arguType isMatchedByRegex:@"^[iIlsL]$"]) {
         long long argu;
         block(&argu);
-        objArg = lObject(argu);
+        objArg = @(argu);
     }
     // BOOL
     else if ([arguType isEqualToString:@"b"]){
         BOOL argu;
         block(&argu);
-        objArg = bObject(argu);
+        objArg = @(argu);
     }
     // float, double
     else if ([arguType isMatchedByRegex:@"^[fd]$"]){
         float argu = 0.0;
         block(&argu);
-        objArg = fObject(argu);
+        objArg = @(argu);
     }
     // CGPoint
     else if ([arguType isEqualToString:@"CGPoint"]){
@@ -131,8 +131,7 @@
     }
     else{
         // Unknown
-        NSString *reason = [NSString stringWithFormat:@"Unknown iOS type: %@",arguType];
-        JS_Stub_Throw(@"AOPContext Fatal Error", reason);
+        JS_Stub_Throw(@"AOPContext Fatal Error", @"Unknown iOS type: %@", arguType);
     }
     return objArg;
 }

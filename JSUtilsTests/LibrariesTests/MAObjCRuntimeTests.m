@@ -62,7 +62,7 @@ static NSString *NewDescription(id self, SEL _cmd){
     NSUInteger index = [methods indexOfObjectPassingTest: ^BOOL (id obj, NSUInteger idx, BOOL *stop) {
         return [obj selector] == sel;
     }];
-    assertThatInt(index, lessThan(@([methods count])));
+    assertThatUnsignedLong(index, lessThan(@([methods count])));
     
     RTMethod *method = [methods objectAtIndex: index];
     assertThatBool([method implementation] == [NSObject instanceMethodForSelector: sel], equalToBool(YES));

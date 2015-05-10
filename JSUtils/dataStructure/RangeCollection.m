@@ -38,8 +38,8 @@
     // head
     NSUInteger readyToMergeStart = newRange.location;
     NSInteger newLoc = 0;
-    for (int i=newRange.location; i>=0; i--) {
-        NSValue *value = [dic objectForKey:iObject(i)];
+    for (NSInteger i=newRange.location; i>=0; i--) {
+        NSValue *value = [dic objectForKey:@(i)];
         // find the one just before the newRange
         if (value) {
             NSRange range = rangeValue(value);
@@ -65,8 +65,8 @@
     // tail
     NSUInteger readyToMergeEnd = newRange.length;
     NSInteger newLen = 0;
-    for (int i=newRange.location; i<=maxRangeLength; i++) {
-        NSValue *value = [dic objectForKey:iObject(i)];
+    for (NSInteger i=newRange.location; i<=maxRangeLength; i++) {
+        NSValue *value = [dic objectForKey:@(i)];
         // find the one just after the newRange
         if (value) {
             NSRange range = rangeValue(value);
@@ -86,7 +86,7 @@
     //    NSLog(@"%d",newLen);
     
     // remove the overlapped ranges
-    for (int i=readyToMergeStart; i<=readyToMergeEnd; i++) {
+    for (NSInteger i=readyToMergeStart; i<=readyToMergeEnd; i++) {
         [dic removeObjectForKey:@(i)];
     }
     
@@ -116,7 +116,7 @@
 }
 
 -(BOOL)containsLocation:(NSUInteger)location length:(NSUInteger)length{
-    for (int i=location; i>=0; i--) {
+    for (NSInteger i=location; i>=0; i--) {
         NSValue *value = [dic objectForKey:@(i)];
         // find the one just before the newRange
         if (value) {

@@ -10,7 +10,7 @@
 
 #import "ReactiveCocoa.h"
 
-@interface Foo : NSObject
+@interface RACFoo : NSObject
 @property(nonatomic,retain) NSString *pwd;
 @property(nonatomic,retain) NSString *pwdConfirmed;
 @property(nonatomic,assign) BOOL createEnabled;
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation Foo
+@implementation RACFoo
 
 -(void)setImg:(UIImage *)img{
     NSLog(@"Image %@ setted.. By main thread ? %d.",img, [[NSThread currentThread] isMainThread]);
@@ -252,7 +252,7 @@
 }
 
 - (void)testAsyncOperation {
-    Foo *f = [Foo new];
+    RACFoo *f = [RACFoo new];
     
     RAC(f, img) = [[[[self asyncOperationWithReturn:@123 ] deliverOn:[RACScheduler scheduler]]
                     map:^id(NSNumber *userId) {
@@ -266,7 +266,7 @@
 }
 
 - (void)testBinding {
-    Foo *f = [Foo new];
+    RACFoo *f = [RACFoo new];
     
     RAC(f, createEnabled) = [RACSignal
                              combineLatest:@[RACObserve(f, pwd), RACObserve(f, pwdConfirmed)]

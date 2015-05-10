@@ -37,8 +37,8 @@
     JSIncrementalFileReader *reader = [JSIncrementalFileReader new];
     
     [reader setOnRead:^(NSData *data, NSUInteger currentPos, NSUInteger fileCurrSize) {
-        NSLog(@"%@ start:%u total:%u", [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease],
-              currentPos, fileCurrSize);
+        NSLog(@"%@ start:%lu total:%lu", [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease],
+              (unsigned long)currentPos, (unsigned long)fileCurrSize);
     }];
     
     __block int count = 0;
