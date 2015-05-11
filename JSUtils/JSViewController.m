@@ -25,8 +25,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    [self testJSSpriteLayer];
-//    [self testDrawabeView];
+//    [self testJSSpriteLayer];
+    [self testDrawabeView];
 //    [self testMaskingView];
 //    [self testJSExtendBtn];
 }

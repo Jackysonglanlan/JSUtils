@@ -9,8 +9,25 @@
 #import "JSDrawableView.h"
 #import <QuartzCore/QuartzCore.h>
 
+CG_INLINE CGContextRef CGContextCreate(CGSize size){
+	CGColorSpaceRef space = CGColorSpaceCreateDeviceRGB();
+	CGContextRef ctx = CGBitmapContextCreate(nil, size.width, size.height, 8, size.width * (CGColorSpaceGetNumberOfComponents(space) + 1),
+                                             space, kCGImageAlphaPremultipliedLast);
+	CGColorSpaceRelease(space);
+    
+	return ctx;
+}
+
+CG_INLINE UIImage* UIGraphicsGetImageFromContext(CGContextRef ctx){
+	CGImageRef cgImage = CGBitmapContextCreateImage(ctx);
+	UIImage* image = [UIImage imageWithCGImage:cgImage scale:[UIScreen mainScreen].scale orientation:UIImageOrientationUp];
+	CGImageRelease(cgImage);
+    
+	return image;
+}
+
 @interface JSDrawableView (){
-  BOOL quit;
+  BOOL isRunning;
 }
 
 @end
@@ -24,18 +41,21 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        link = [[CADisplayLink displayLinkWithTarget:self selector:@selector(drawCavans:)] retain];
     }
     return self;
 }
 
 - (void)dealloc{
-    JS_releaseSafely(link);
+    [self stop];
     [super dealloc];
 }
 
--(void)startDrawing{  
+-(void)startDrawing{
+    if (isRunning) return;
+    isRunning = YES;
+    
     ctx = CGContextCreate(self.bounds.size);
+    link = [[CADisplayLink displayLinkWithTarget:self selector:@selector(drawCavans:)] retain];
     
     // make transform to compatible with UIKit's coordination: Origin point at top-left corner.
     CGContextTranslateCTM(ctx, 0, self.bounds.size.height);
@@ -45,18 +65,15 @@
     
     NSTimeInterval interval = [self timeDrivenRefreshInterval];
     if (interval > 0) {
-        
-        // TODO: use display link to impl time driven drawing
-        
         link.frameInterval = interval;
         [link addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+        return;
     }
-    else{
-        [self drawCavans:ctx rect:rect];
-        [self renderToScreenWithDoneAction:^{
-            CGContextRelease(ctx);
-        }];
-    }
+
+    [self drawCavans:ctx rect:rect];
+    [self renderToScreenWithDoneAction:^{
+        [self stop];
+    }];
 }
 
 - (void)drawCavans:(CADisplayLink*)sender {
@@ -82,9 +99,13 @@
 
 #pragma mark public
 
--(void)quitDrivenLoop{
+-(void)stop{
+    isRunning = NO;
+    
     [link invalidate];
+    JS_releaseSafely(link);
     CGContextRelease(ctx);
+    ctx = NULL;
 }
 
 

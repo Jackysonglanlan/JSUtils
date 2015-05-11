@@ -8,25 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
-CG_INLINE CGContextRef CGContextCreate(CGSize size){
-	CGColorSpaceRef space = CGColorSpaceCreateDeviceRGB();
-	CGContextRef ctx = CGBitmapContextCreate(nil, size.width, size.height, 8, size.width * (CGColorSpaceGetNumberOfComponents(space) + 1),
-                                             space, kCGImageAlphaPremultipliedLast);
-	CGColorSpaceRelease(space);
-  
-	return ctx;
-}
-
-CG_INLINE UIImage* UIGraphicsGetImageFromContext(CGContextRef ctx){
-	CGImageRef cgImage = CGBitmapContextCreateImage(ctx);
-	UIImage* image = [UIImage imageWithCGImage:cgImage scale:[UIScreen mainScreen].scale orientation:UIImageOrientationUp];
-	CGImageRelease(cgImage);
-  
-	return image;
-}
-
-
 /*
  Subclass should *never* override drawRect: method, use drawCavans:rect: instead.
  */
@@ -34,7 +15,7 @@ CG_INLINE UIImage* UIGraphicsGetImageFromContext(CGContextRef ctx){
 
 -(void)startDrawing;
 
--(void)quitDrivenLoop;
+-(void)stop;
 
 #pragma mark subclass override
 

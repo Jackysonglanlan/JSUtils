@@ -228,6 +228,7 @@
 		4CF519E31AFFBCA400479A71 /* NSMutableArray+sqlRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF519E01AFFBCA400479A71 /* NSMutableArray+sqlRepresentation.m */; };
 		4CF519EA1AFFC20E00479A71 /* ActiveRecordEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF519E91AFFC20E00479A71 /* ActiveRecordEntity.m */; };
 		4CF519ED1AFFC33300479A71 /* ARLazyFetcher+SLLEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF519EC1AFFC33300479A71 /* ARLazyFetcher+SLLEnhance.m */; };
+		4CF519F01B004FF600479A71 /* PWDisplayLinker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF519EF1B004FF500479A71 /* PWDisplayLinker.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -756,6 +757,8 @@
 		4CF519E91AFFC20E00479A71 /* ActiveRecordEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveRecordEntity.m; sourceTree = "<group>"; };
 		4CF519EB1AFFC33300479A71 /* ARLazyFetcher+SLLEnhance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARLazyFetcher+SLLEnhance.h"; sourceTree = "<group>"; };
 		4CF519EC1AFFC33300479A71 /* ARLazyFetcher+SLLEnhance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ARLazyFetcher+SLLEnhance.m"; sourceTree = "<group>"; };
+		4CF519EE1B004FF500479A71 /* PWDisplayLinker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWDisplayLinker.h; sourceTree = "<group>"; };
+		4CF519EF1B004FF500479A71 /* PWDisplayLinker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWDisplayLinker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1543,6 +1546,8 @@
 				4CF5187E1AFD233700479A71 /* UIImage-categories */,
 				4CF518AB1AFE2F0300479A71 /* JSUIUtils.h */,
 				4CF518AC1AFE2F0300479A71 /* JSUIUtils.m */,
+				4CF519EE1B004FF500479A71 /* PWDisplayLinker.h */,
+				4CF519EF1B004FF500479A71 /* PWDisplayLinker.m */,
 				4CF5188B1AFD249800479A71 /* JSDrawableView.h */,
 				4CF5188C1AFD249800479A71 /* JSDrawableView.m */,
 				4CF5188E1AFD252C00479A71 /* JSExtendButton.h */,
@@ -2041,6 +2046,7 @@
 				4CF517DF1AFC766600479A71 /* JSSystem.m in Sources */,
 				4CF519CC1AFFB9D500479A71 /* NSDate+sqlRepresentation.m in Sources */,
 				4CF517B21AFC757100479A71 /* JSBits.m in Sources */,
+				4CF519F01B004FF600479A71 /* PWDisplayLinker.m in Sources */,
 				4CF518011AFC76B200479A71 /* JSDataTimoutReporter.m in Sources */,
 				4CF518E01AFF7B4E00479A71 /* TestJSSpriteLayerVC.m in Sources */,
 				4CF5179C1AFC743F00479A71 /* NSUserDefaults+SLLEnhance.m in Sources */,
