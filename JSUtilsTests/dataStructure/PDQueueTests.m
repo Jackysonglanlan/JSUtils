@@ -35,7 +35,7 @@ PDQueue *list = nil;
   assertThat([list pop], is(equalToInt(2)));
   assertThat([list pop], is(equalToInt(3)));
   assertThat([list pop], is(equalToInt(1)));
-  assertThatInt([list size], is(equalToInt(0)));
+  assertThatInt((int)[list size], is(equalToInt(0)));
 }
 
 - (void)testShiftAndUnshift{
@@ -46,7 +46,7 @@ PDQueue *list = nil;
   assertThat([list shift], is(equalToInt(2)));
   assertThat([list shift], is(equalToInt(3)));
   assertThat([list shift], is(equalToInt(1)));
-  assertThatInt([list size], is(equalToInt(0)));
+  assertThatInt((int)[list size], is(equalToInt(0)));
 }
 
 - (void)testShiftAndPop{
@@ -58,7 +58,7 @@ PDQueue *list = nil;
   assertThat([list shift], is(equalToInt(1)));
   assertThat([list pop], is(equalToInt(4)));
   assertThat([list shift], is(equalToInt(3)));
-  assertThatInt([list size], is(equalToInt(1)));
+  assertThatInt((int)[list size], is(equalToInt(1)));
 }
 
 @end

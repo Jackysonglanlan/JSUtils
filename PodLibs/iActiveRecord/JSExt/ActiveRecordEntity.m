@@ -66,12 +66,19 @@
     return [[self buildFetcherWithFrom:fromSec1970 to:toSec1970] count];
 }
 
-+(NSArray*)findLast:(NSUInteger)count offset:(NSUInteger)offset{
++(NSArray*)findLast:(NSString*)field count:(NSUInteger)count offset:(NSUInteger)offset{
     ARLazyFetcher *f = [self lazyFetcher];
-    NSArray *records = [[[[f orderBy:@"createdAt" ascending:NO] limit:count] offset:offset] fetchRecords];
-
+    NSArray *records = [[[[f orderBy:field ascending:NO] limit:count] offset:offset] fetchRecords];
+    
     // return as the normal order to outside
     return [records sortBy:@"id"];
+}
++(NSArray*)findLastCreatedWithCount:(NSUInteger)count offset:(NSUInteger)offset{
+    return [self findLast:@"createdAt" count:count offset:offset];
+}
+
++(NSArray*)findLastUpdatedWithCount:(NSUInteger)count offset:(NSUInteger)offset{
+    return [self findLast:@"updatedAt" count:count offset:offset];
 }
 
 +(instancetype)findByPId:(NSNumber*)pID{
@@ -82,11 +89,7 @@
 #pragma mark delete
 
 +(void)deleteAllWhereField:(NSString*)field notIn:(NSSet*)valueList otherCondition:(NSString*)other{
-    other = other ? [NSString stringWithFormat:@" and %@ ", other] : @"";
-    
-    NSString *state = [NSString stringWithFormat:@"delete from %@ where %@ not in ( %@ ) %@",
-                       self, field, [[valueList allObjects] join:@","], other];
-    [self executeStatement:state];
+    [self deleteAllWhereField:[field stringByAppendingString:@" not "] in:valueList otherCondition:other];
 }
 
 +(void)deleteAllWhereField:(NSString*)field in:(NSSet*)valueList otherCondition:(NSString*)other{

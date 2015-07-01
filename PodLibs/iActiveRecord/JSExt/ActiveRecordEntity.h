@@ -31,14 +31,19 @@
 +(NSUInteger)countInTimeRangeFrom:(NSTimeInterval)fromSec1970 to:(NSTimeInterval)toSec1970;
 
 /**
- *  Query the last 'count' records based on the 'createdAt'.
+ *  Query the last 'count' number of records.
  *
  *  @param count  the num of records you want to query
  *  @param offset the last record's index for the matched record, 0 based(means 0 is last one, 1 means last - 1)
  *
  *  @return the records
  */
-+(NSArray*)findLast:(NSUInteger)count offset:(NSUInteger)offset;
++(NSArray*)findLastCreatedWithCount:(NSUInteger)count offset:(NSUInteger)offset;
+
+/**
+ * Similar as -findLastCreatedWithCount:offset:
+ */
++(NSArray*)findLastUpdatedWithCount:(NSUInteger)count offset:(NSUInteger)offset;
 
 +(instancetype)findByPId:(NSNumber*)pID;
 
