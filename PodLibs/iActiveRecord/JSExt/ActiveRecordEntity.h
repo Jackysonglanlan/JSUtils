@@ -58,17 +58,15 @@
 
 +(void)batchDeleteInDB:(NSArray*)entityList complete:(void (^)(void))block;
 
-#pragma mark extraInfo
-
-// Armed with this property, we don't have to modify the table structure.
-// iActiveRecord will save it as JSON String
-@property(nonatomic,retain) NSMutableDictionary *extraInfo;
-
 #pragma mark NSDictionary to entity
 
 -(void)fillData:(NSDictionary*)data keyPath:(NSString*)key defaultValue:(id)dValue field:(NSString*)field;
 
 #pragma mark extraInfo
+
+// Armed with this property, we don't have to modify the table structure.
+// iActiveRecord will save it as JSON String
+@property(nonatomic,retain) NSMutableDictionary *extraInfo;
 
 -(void)addExtra:(id)value forKey:(NSString*)key;
 
